@@ -11,7 +11,7 @@ CSVファイルのファイルIDを渡して実行すると、それをスプレ
 function importCsvToSpreadsheet(fileId) {
   const file = DriveApp.getFileById(fileId);
   const csvData = file.getBlob().getDataAsString();
-  const sheet = createSheetFromCsvData_(csvData);
+  createSheetFromCsvData_(csvData);
 }
 
 /**
@@ -33,6 +33,6 @@ function createSheetFromCsvData_(csvData) {
 
 // 使用例
 function importCsvToSpreadsheetExample() {
-  const fileId = '1hcQUcp-VPJBBepl3IhJM_WGMcTvPXR6I';
+  const fileId = '**********';
   importCsvToSpreadsheet(fileId);
 }

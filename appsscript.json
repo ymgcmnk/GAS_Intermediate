@@ -1,0 +1,24 @@
+{
+  "timeZone": "Asia/Tokyo",
+  "dependencies": {
+    "libraries": [{
+      "userSymbol": "iwanigiri",
+      "libraryId": "1agNLiEr1L6KZKHP9W7lpGHC23ol9oAFB1o6TTg4MTqHmG3ek9eKMoXjo",
+      "version": "14"
+    }, {
+      "userSymbol": "Onigiri",
+      "libraryId": "1-o_eSe0D9DuwWmtRlIwhNHVSeOfiR3hl-MCf3gO_uBScbJXB7d5oCP_t",
+      "version": "2"
+    }, {
+      "userSymbol": "MyLibrary",
+      "libraryId": "1mrVUnZIG3-hi6kp7bLzOTb0gaZk10VEKnCeDDS--2i6rlvESjxwc55IP",
+      "version": "8"
+    }, {
+      "userSymbol": "TAOnigiri",
+      "libraryId": "1QfH-1_4B2K3CfBItib3wYjcd11Q5cJuBTsrzmzt1jm1phkq7ouHV_3re",
+      "version": "3"
+    }]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}
