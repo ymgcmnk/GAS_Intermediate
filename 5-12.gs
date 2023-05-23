@@ -45,3 +45,7 @@ function saveSheetsAsCsvAndZipExample() {
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   saveSheetsAsCsvAndZip(spreadsheet);
 }
+
+
+//別回答
+//参考　https://moripro.net/gas-sheet-to-csv/
