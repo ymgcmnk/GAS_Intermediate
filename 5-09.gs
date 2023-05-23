@@ -25,17 +25,14 @@ function createSheetFromCsvData_(csvData) {
   const sheetName = 'Imported CSV';
   spreadsheet.insertSheet(sheetName);
   const sheet = spreadsheet.getSheetByName(sheetName);
-  
-  const rows = csvData.split('\n');
-  const data = rows.map(row => row.split(','));
-
-  sheet.getRange(1, 1, data.length, data[0].length).setValues(data);
+  const values = Utilities.parseCsv(csvData);
+  sheet.getRange(1, 1, values.length, values[0].length).setValues(values);
   
   return sheet;
 }
 
 // 使用例
 function importCsvToSpreadsheetExample() {
-  const fileId = 'YOUR_CSV_FILE_ID';
+  const fileId = '1hcQUcp-VPJBBepl3IhJM_WGMcTvPXR6I';
   importCsvToSpreadsheet(fileId);
 }
