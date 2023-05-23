@@ -50,12 +50,20 @@ class DateFormat {
 }
 
 
-function test_classDateFormat_5_15(){
+function test_classDateFormat_5_15() {
 
-// 使用例
-const date = new Date();
-const dateFormat = new DateFormat(date);
-console.log(dateFormat.getStringFormat()); // "yyyy/MM/dd"形式で出力
-console.log(dateFormat.getLocaleFormat()); // "yyyy年M月d日"形式で出力
+  // 使用例
+  const date = new Date();
+  const dateFormat = new DateFormat(date);
+  console.log(dateFormat.getStringFormat()); // "yyyy/MM/dd"形式で出力
+  console.log(dateFormat.getLocaleFormat()); // "yyyy年M月d日"形式で出力
 }
 
+//注　シンプルにするならUtilities.formatDateでいいと思います
+//
+// getStringFormat() {
+//   return Utilities.formatDate(this.date, `JST`, `yyyy/MM/dd`);
+// };
+// getLocaleFormat() {
+//   return Utilities.formatDate(this.date, `JST`, `yyyy年MM月dd日`)
+// }
