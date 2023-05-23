@@ -4,7 +4,7 @@
 複数のCSVファイルが圧縮されたZIPファイルのファイルIDを渡して実行すると、各CSVファイルをスプレッドシートの別々のシートに展開する関数を作成しましょう。
 */
 
-function spreadZipDate_TEST() {
+function unzipAndImportCsvtoSheet_TEST() {
 
   const fileId = '****** Zip ファイルのファイル ID ******';
   spreadZipDate_(fileId);
@@ -14,8 +14,9 @@ function spreadZipDate_TEST() {
 /**
  * ZIP ファイルのファイル ID からスプレッドシートに展開する関数
  * @param {string} fileId - ファイル ID
+ * @private
  */
-function spreadZipDate_(fileId) {
+function unzipAndImportCsvtoSheet_(fileId) {
 
   const zip = DriveApp.getFileById(fileId).getBlob();
   const blobs = Utilities.unzip(zip);
