@@ -30,7 +30,7 @@ function convertDataToCsv_(data) {
 }
 
 /**
- * CSV形式の文字列をGoogleドライブに保存する
+ * CSV形式のファイルをGoogleドライブに保存する
  * @param {string} fileName - 保存するファイル名
  * @param {string} csvData - CSV形式の文字列
  * @private
